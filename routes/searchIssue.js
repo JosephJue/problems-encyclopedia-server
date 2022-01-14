@@ -29,7 +29,7 @@ router.post('/', async function (req, res) {
 
 getHotSearch = function(key, res) {
   if (key.includes("iOS")) {
-    var querySql = 'SELECT * FROM summaryiOS order by reviewCount desc limit 0,3';
+    var querySql = 'SELECT * FROM summaryiOS order by reviewCount desc limit 0,5';
     sqliteDB.queryData(querySql, function(objects){
       if (objects.length == 0) {
         res.send("None");
