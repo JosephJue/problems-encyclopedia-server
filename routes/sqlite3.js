@@ -7,7 +7,8 @@
  */
  
  var fs = require('fs');
- var sqlite3 = require('/usr/local/lib/node_modules/sqlite3').verbose();
+//  var sqlite3 = require('/usr/local/lib/node_modules/sqlite3').verbose();
+ var sqlite3 = require('sqlite3').verbose()
   
  var DB = DB || {};
  
